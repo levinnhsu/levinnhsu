@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Askme</title>
+	</head>
+	<style>
+		body {
+			font-family: courier;
+			background-image: url("Media/Background/166109.jpg");
+    		background-repeat: repeat-y;
+			width: 100%;
+		}
+		.topnav {
+			background-color: #00969B;
+			overflow: hidden;
+			width: 100%;
+		}
+		.topnav a{
+			float: left;
+			color: #F3FF00;
+			text-align: center;
+			padding: 15px 15px;
+			text-decoration: none;
+			font-size: 20px;
+		}
+		.topnav a:hover{
+			background-color: #00FF6F;
+			color: #00969B;
+		}
+		.topnav a.active{
+			background-color: #00FFEE;
+			color: cyan;
+		}
+		.kanan {
+			float: right;	
+		}
+		h1 {
+			text-align: center;
+			font-size-adjust: auto;
+		}
+		.vl {
+			border-left: 5px outset #545454;
+			border-width: thick;
+			height: 300px;
+			position: relative ;
+			margin-left: -3px;
+		}
+		fieldset {
+			background-color: grey;
+			background-image: linear-gradient(0deg, grey, white);
+			border-radius: 15px;
+			border-style: outset;
+			border-width: thick;
+			width: 50%;
+		}
+		p {
+    		font-size: 48px;
+			line-height: 1;
+		}
+		input {
+			border-radius: 15px;
+			padding: 10px;
+			border: 2px;
+			font-family: courier;
+		}
+		textarea {
+			border-radius: 15px;
+			padding: 10px;
+			border: 2px;
+			font-family: courier;
+		}
+		.button {
+			background-color: white;
+			border: dotted;
+			color: black;
+			padding: 20px;
+			text-align: center;
+			text-decoration: none;
+			font-family: courier;
+			display: inline_block;
+			font-size: 16px;
+			margin: 4px 2px;
+		}
+		.button:hover {
+			padding-right: 20px;
+			font-weight: bold;
+		}
+		.submit {
+			border-radius: 50%;
+			width: 30%;
+		}
+		.reset {
+			border-radius: 50%;
+			width: 30%;
+		}
+		footer {
+			position: sticky;
+			background-color: aliceblue;
+			bottom: 0;
+			left: 0;
+		}
+	</style>
+	<body>
+		<div class="topnav">
+			<a><img src="Media/Nama.png" width="20"></a>
+			<div class="kanan">
+				<a href="Index.html"><strong>Home</strong></a>
+				<a href="Profile.html"><strong>Profile</strong></a>
+				<a href="Portofolio.html"><strong>Portofolio</strong></a>
+				<a href="Askme.html" ><strong>Ask Me!</strong></a>
+			</div>
+		</div>
+		<br>
+		<center>
+		<form action="sendmail.php" method="post">
+			<fieldset>
+				<h1>ASK ME!</h1>
+			</fieldset>
+			<br>
+				<fieldset>
+					<table>
+						<tr>
+							<td align="right" width="30%"><p><b>Ketikkan komentar Anda disini.</b></p><br></td>
+							<td><br></td>
+							<td><div class="vl"><hr></div></td>
+							<td><br></td>
+							<td align="left" width="70%">
+								<label><b>Name :</b></label>
+								<input name="name" type="text" required size="55">
+								<label><b>Email :</b></label>
+								<input name="email" type="email" required size="55">
+								<label><b>Message :</b></label>
+								<textarea name="message" cols="53" rows="10"></textarea>
+							</td>
+						</tr>
+					</table>
+					<hr>
+					<center>
+						<input type="submit" class="button submit" id="submit" formmethod="POST" value="Send" method="POST">
+						<input type="reset" autofocus="autofocus" id="reset" value="Reset" class="button reset">
+					</center>
+				</fieldset>
+			</form>
+			<br>
+			</center>	
+		<footer>
+			<table width="100%" border="0">
+				<tr>
+					<td align="center"><a href="https://www.instagram.com/levinnhsu/" target="new"><img src="https://www.freeiconspng.com/uploads/instagram-logo-6.jpg" width="100"></a></td> 
+				  	<td align="center"><a href="https://www.youtube.com/@Duckytrolux" target="new"><img src="https://cdn3.iconfinder.com/data/icons/3d-applications/512/app_icons_media___youtube_logo_video_multimedia_stream_download_play_clip.png" width="100"></a></td>
+				</tr>
+				<tr>
+					<td align="center">Instagram</td>
+					<td align="center">Youtube</td>
+				</tr>
+			</table>
+		</footer>
+	</body>
+</html>
